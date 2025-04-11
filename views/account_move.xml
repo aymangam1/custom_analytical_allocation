@@ -1,0 +1,16 @@
+<odoo>
+    <record model="ir.ui.view" id="view_move_form_inherit">
+        <field name="name">view move form</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='ref']"  position="after">
+                <field name="analytic_distribution" widget="analytic_distribution"/>
+<!--                <field name="analytic_distribution" widget="analytic_distribution"/>-->
+            </xpath>
+            <xpath expr="//button[@name='action_post']" position="after">
+                <button name="split_payable_line" string="Split Payable" type="object" class="btn-primary"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
