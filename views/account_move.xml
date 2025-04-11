@@ -8,9 +8,9 @@
                 <field name="analytic_distribution" widget="analytic_distribution"/>
 <!--                <field name="analytic_distribution" widget="analytic_distribution"/>-->
             </xpath>
-            <xpath expr="//button[@name='action_post']" position="after">
+<!--             <xpath expr="//button[@name='action_post']" position="after">
                 <button name="split_payable_line" string="Split Payable" type="object" class="btn-primary"/>
-            </xpath>
+            </xpath> -->
         </field>
     </record>
 </odoo>
